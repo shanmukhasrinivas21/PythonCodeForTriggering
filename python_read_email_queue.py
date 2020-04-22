@@ -1,7 +1,6 @@
 import win32com.client, json, uuid, configparser, queu, os, triggerbot, smtplib, requests, mail
 from pathlib import Path
 from bs4 import BeautifulSoup
-from APIBot import APIBot
 from exchangelib import Credentials, Account, Configuration, DELEGATE, FileAttachment
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -31,11 +30,11 @@ def add_to_queue(bot, msg_tobe_moved, inbox):
    #The data collected is passed to add_queue_item in queu
     queu.add_queue_item(bot_name, values=inp_str)
     # check message if it read move to respective folder
-''' msg_tobe_moved.is_read = True
+    msg_tobe_moved.is_read = True
     msg_tobe_moved.save()
     for each_folder in inbox.children:
         if(folder_name.lower() in each_folder.name.lower()):
-            msg_tobe_moved.move(each_folder)'''
+            msg_tobe_moved.move(each_folder)
     
 
 ## Execution Starts here ##
@@ -75,10 +74,7 @@ def run():
                                 # Here collecting the data and adding to queue is executed
                                 add_to_queue(
                                     bot_data[each_bot], message, inbox)
-                                # Here Trigger function is executed in triggerbot
-                                #triggerbot.trigger()
                                 triggered = 1  # checkpoint
-                                
                                 break
                             else:
                                 triggered = 0
@@ -94,7 +90,7 @@ def run():
     except Exception as e:
         template = "An exception of type {0} occurred. Arguments:\n{1!r}"
         message = template.format(type(e).__name__, e.args)
-        mail.sendemail("test@vfc.com","Kompella_Aditya@vfc.com","Exception",message)
+        mail.sendemail("test@vfc.com","Garimalla_shanmukhasrinivas@vfc.com","Exception",message)
           
 if __name__ == "__main__":
     logging.basicConfig(filename = "E:\\RPA\\dev\\TriggerScript\\EmailScript.log", format="%(asctime)s -  %(message)s", datefmt="%m/%d/%Y %I:%M:%S %p", filemode="w", level="INFO")

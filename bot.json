@@ -1,4 +1,14 @@
 {
+    "1": {
+        "bot-id": "RPABOT1",
+        "bot-name": "BOT1-BBOP-Start",
+        "sender": "",
+        "subject": "PLEASE PERFORM BBOP STARTS",
+        "body": "",
+        "folder-name": "BBOP",
+        "active": "0",
+	    "attachments_location": ""
+    },
     "11": {
         "bot-id": "RPABOT11",
         "bot-name": "NGC-Test",
@@ -6,65 +16,10 @@
         "subject": "RPABOT11",
         "body": "",
         "folder-name": "PO ReExtract",
-        "mail-required": "yes",
         "active": "0",
-	"attachments_location": ""
+	    "attachments_location": ""
     },
-    "12": {
-        "bot-id": "RPABOT12",
-        "bot-name": "RPABOT12_ASN_Reextract",
-        "sender": "",
-        "subject": "ASN",
-        "body": "",
-        "folder-name": "ASN ReExtract",
-        "mail-required": "yes",
-        "active": "0",
-	"attachments_location": ""
-    },
-    "20": {
-        "bot-id": "RPABOT20",
-        "bot-name": "APITest",
-        "sender": "",
-        "subject": "Testing Email",
-        "body": "",
-        "folder-name": "APi test",
-        "mail-required": "No",
-        "active": "0",
-	"attachments_location": ""
-    },
-    "2": {
-        "bot-id": "RPABOT2",
-        "bot-name": "Testy",
-        "sender": "",
-        "subject": "Testing Email",
-        "body": "",
-        "folder-name": "Dynamic_Ini",
-        "mail-required": "No",
-        "active": "0",
-        "attachments_location": "E:\\dev\\192-DynamicInit\\inbound"
-    },
-    "4": {
-        "bot-id": "test1",
-        "bot-name": "test1",
-        "sender": "",
-        "subject": "1test-1",
-        "body": "",
-        "folder-name": "test1",
-        "mail-required": "No",
-        "active": "0",
-        "attachments_location": "C:\\Users\\rpagen\\report"
-    },
-    "5": {
-        "bot-id": "test2",
-        "bot-name": "test2",
-        "sender": "",
-        "subject": "2test-2",
-        "body": "",
-        "folder-name": "test2",
-        "active": "0",
-       "attachments_location": "C:\\Users\\rpagen\\report"
-    },
-   "13": {
+    "13": {
         "bot-id": "RPABOT13",
         "bot-name": "RPABOT13-PTP-SAP-BATCHCREATION",
         "sender": "",
@@ -72,6 +27,6 @@
         "body": "",
         "folder-name": "RPABOT13",
         "active": "1",
-       "attachments_location": "C:\\Users\\rpagen\\Report"
-          }
+        "attachments_location": "C:\\Users\\rpagen\\Report"
+    }  
 }   

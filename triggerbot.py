@@ -1,5 +1,4 @@
 import queu, json, uuid, configparser, requests,logging
-from APIBot import APIBot
 
 def trigger():
     # This function will trigger the bot
