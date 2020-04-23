@@ -18,12 +18,12 @@
 	    "attachments_location": ""
     },
     "13": {
-        "bot-name": "RPABOT13-PTP-SAP-BATCHCREATION",
+        "bot-name": "RPABOT13-DT-PTP-BATCHCREATION",
         "sender": "",
         "subject": "Failed PGI/PGR",
         "body": "",
         "folder-name": "RPABOT13",
-        "active": "0",
+        "active": "1",
         "attachments_location": "C:\\Users\\rpagen\\Report"
     }
 }   

@@ -17,7 +17,7 @@ def trigger():
         # To get single queue from a list of queues
         for queue in queues:
             qnames[queue["Id"]] = queue["Name"]
-            if((qnames[queue["Id"]])=="RPABOT13-PTP-SAP-BATCHCREATION" or (qnames[queue["Id"]])=="RPABOT11-ODAS-NGC-POEXTRACT" or (qnames[queue["Id"]])=="RPABOT1-BBOPSTART"):
+            if((qnames[queue["Id"]])=="RPABOT13-DT-PTP-BATCHCREATION" or (qnames[queue["Id"]])=="RPABOT11-ODAS-NGC-POEXTRACT" or (qnames[queue["Id"]])=="RPABOT1-BBOPSTART"):
                 # pass the Name of the queue to get items
                 queueitems = queu.get_queue_items(status='New', qid=queue["Id"])
                 if(queueitems['@odata.count'] > 0):

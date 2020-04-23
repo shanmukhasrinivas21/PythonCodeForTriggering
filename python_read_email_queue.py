@@ -82,14 +82,14 @@ def run():
                                 break
                             else:
                                 triggered = 0
-  
-                            '''   if(triggered == 0):
-                            # Moving the email to 'others' folder, if it doesn't match with any of the subjects
-                            # defined in bot.json
+
+                            '''if(triggered == 0):
+                            Moving the email to 'others' folder, if it doesn't match with any of the subjects
+                            defined in bot.json
                             for each_folder in inbox.children:
-                                # This mail move is not recorded in database.
-                                if("others" in str(each_folder).lower()):
-                                    message.move(each_folder)'''
+                            This mail move is not recorded in database.
+                            if("others" in str(each_folder).lower()):
+                            message.move(each_folder)'''
         triggerbot.trigger()
     except Exception as e:
         template = "An exception of type {0} occurred. Arguments:\n{1!r}"
