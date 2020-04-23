@@ -1,23 +1,11 @@
-04/23/2020 05:25:59 AM -  Execution Started
-04/23/2020 05:25:59 AM -  Checking mails from outlook
-04/23/2020 05:26:06 AM -  Found naive datetime 2020-04-23 05:21:11 on field last_modified_time. Assuming timezone America/New_York
-04/23/2020 05:26:06 AM -  Adding items to the Queue Started
-04/23/2020 05:26:06 AM -  Adding items to the Queue Completed
-04/23/2020 05:26:12 AM -  Found naive datetime 2020-04-22 07:18:33 on field last_modified_time. Assuming timezone America/New_York
-04/23/2020 05:26:12 AM -  Adding items to the Queue Started
-04/23/2020 05:26:13 AM -  Adding items to the Queue Completed
-04/23/2020 05:26:13 AM -  Found naive datetime 2020-04-22 07:18:33 on field last_modified_time. Assuming timezone America/New_York
-04/23/2020 05:26:13 AM -  Adding items to the Queue Started
-04/23/2020 05:26:13 AM -  Adding items to the Queue Completed
-04/23/2020 05:26:14 AM -  Found naive datetime 2020-04-22 07:18:33 on field last_modified_time. Assuming timezone America/New_York
-04/23/2020 05:26:14 AM -  Adding items to the Queue Started
-04/23/2020 05:26:14 AM -  Adding items to the Queue Completed
-04/23/2020 05:26:15 AM -  Found naive datetime 2020-04-22 07:18:33 on field last_modified_time. Assuming timezone America/New_York
-04/23/2020 05:26:15 AM -  Adding items to the Queue Started
-04/23/2020 05:26:15 AM -  Adding items to the Queue Completed
-04/23/2020 05:26:15 AM -  Triggering the bot execution started
-04/23/2020 05:26:15 AM -  Getting List of Queues Started
-04/23/2020 05:26:16 AM -  Getting List of Queue items Started
-04/23/2020 05:26:16 AM -  Getting List of Queue items Started
-04/23/2020 05:26:16 AM -  Getting List of Queue items Started
-04/23/2020 05:26:17 AM -  Triggering the bot execution Completed
+04/23/2020 05:45:50 AM -  Execution Started
+04/23/2020 05:45:50 AM -  Checking mails from outlook
+04/23/2020 05:45:55 AM -  Found naive datetime 2020-04-23 05:23:16 on field last_modified_time. Assuming timezone America/New_York
+04/23/2020 05:45:55 AM -  Adding items to the Queue Started
+04/23/2020 05:45:55 AM -  Adding items to the Queue Completed
+04/23/2020 05:45:59 AM -  Triggering the bot execution started
+04/23/2020 05:45:59 AM -  Getting List of Queues Started
+04/23/2020 05:45:59 AM -  Getting List of Queue items Started
+04/23/2020 05:45:59 AM -  Getting List of Queue items Started
+04/23/2020 05:46:00 AM -  Getting List of Queue items Started
+04/23/2020 05:46:00 AM -  Triggering the bot execution Completed
