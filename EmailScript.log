@@ -1,15 +1,7 @@
-04/22/2020 07:46:25 AM -  Execution Started
-04/22/2020 07:46:25 AM -  Checking mails from outlook
-04/22/2020 07:46:29 AM -  Found naive datetime 2020-04-22 05:38:01 on field last_modified_time. Assuming timezone America/New_York
-04/22/2020 07:46:29 AM -  Adding items to the Queue Started
-04/22/2020 07:46:29 AM -  Adding items to the Queue Completed
-04/22/2020 07:46:29 AM -  Found naive datetime 2020-04-22 04:27:05 on field last_modified_time. Assuming timezone America/New_York
-04/22/2020 07:46:29 AM -  Adding items to the Queue Started
-04/22/2020 07:46:30 AM -  Adding items to the Queue Completed
-04/22/2020 07:46:30 AM -  Found naive datetime 2020-04-22 04:27:04 on field last_modified_time. Assuming timezone America/New_York
-04/22/2020 07:46:30 AM -  Adding items to the Queue Started
-04/22/2020 07:46:30 AM -  Adding items to the Queue Completed
-04/22/2020 07:46:30 AM -  Triggering the bot execution started
-04/22/2020 07:46:30 AM -  Getting List of Queues Started
-04/22/2020 07:46:30 AM -  Getting List of Queue items Started
-04/22/2020 07:46:31 AM -  Triggering the bot execution Completed
+04/23/2020 01:35:15 AM -  Execution Started
+04/23/2020 01:35:15 AM -  Checking mails from outlook
+04/23/2020 01:35:22 AM -  Found naive datetime 2020-04-22 15:08:01 on field last_modified_time. Assuming timezone Asia/Calcutta
+04/23/2020 01:35:22 AM -  Adding items to the Queue Started
+04/23/2020 01:35:22 AM -  Adding items to the Queue Completed
+04/23/2020 01:35:32 AM -  Triggering the bot execution started
+04/23/2020 01:35:32 AM -  Getting List of Queues Started

@@ -1,7 +1,6 @@
 {
     "1": {
-        "bot-id": "RPABOT1",
-        "bot-name": "BOT1-BBOP-Start",
+        "bot-name": "RPABOT1-BBOPSTART",
         "sender": "",
         "subject": "PLEASE PERFORM BBOP STARTS",
         "body": "",
@@ -10,8 +9,7 @@
 	    "attachments_location": ""
     },
     "11": {
-        "bot-id": "RPABOT11",
-        "bot-name": "NGC-Test",
+        "bot-name": "RPABOT11-ODAS-NGC-POEXTRACT",
         "sender": "",
         "subject": "RPABOT11",
         "body": "",
@@ -20,13 +18,12 @@
 	    "attachments_location": ""
     },
     "13": {
-        "bot-id": "RPABOT13",
         "bot-name": "RPABOT13-PTP-SAP-BATCHCREATION",
         "sender": "",
         "subject": "Failed PGI/PGR",
         "body": "",
         "folder-name": "RPABOT13",
-        "active": "1",
+        "active": "0",
         "attachments_location": "C:\\Users\\rpagen\\Report"
-    }  
+    }
 }   
