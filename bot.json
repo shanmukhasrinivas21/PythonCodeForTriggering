@@ -6,6 +6,7 @@
         "body": "",
         "folder-name": "BBOP",
         "active": "0",
+        "environment": "Prod1",
 	    "attachments_location": ""
     },
     "11": {
@@ -15,15 +16,17 @@
         "body": "",
         "folder-name": "PO ReExtract",
         "active": "0",
+        "environment": "NGC_Prod",
 	    "attachments_location": ""
     },
-    "13": {
-        "bot-name": "RPABOT13-DT-PTP-BATCHCREATION",
+    "4": {
+        "bot-name": "test1",
         "sender": "",
-        "subject": "Failed PGI/PGR",
+        "subject": "1test-1",
         "body": "",
-        "folder-name": "RPABOT13",
+        "folder-name": "test1",
         "active": "1",
+        "environment": "rpahub",
         "attachments_location": "C:\\Users\\rpagen\\Report"
     }
 }   
