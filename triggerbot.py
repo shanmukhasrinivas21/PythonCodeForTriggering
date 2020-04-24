@@ -22,36 +22,36 @@ def trigger():
             for each_bot in bot_data:
                 if (bot_data[each_bot]["active"] == "1"):
                     env = bot_data[each_bot]["environment"]
-                    print(env)
-                    '''if (bot_data[each_bot]["active"] == "1"):
-                    print(qnames[queu["Id"]])'''
-                    #if((qnames[queue["Id"]])=="RPABOT13-DT-PTP-BATCHCREATION" or (qnames[queue["Id"]])=="RPABOT11-ODAS-NGC-POEXTRACT" or (qnames[queue["Id"]])=="RPABOT1-BBOPSTART"):
+                    check = 1
+            #if((qnames[queue["Id"]])=="RPABOT13-DT-PTP-BATCHCREATION" or (qnames[queue["Id"]])=="RPABOT11-ODAS-NGC-POEXTRACT" or (qnames[queue["Id"]])=="RPABOT1-BBOPSTART"):
                 # pass the Name of the queue to get items
-                    queueitems = queu.get_queue_items(status='New', qid=queue["Id"])
-                    if(queueitems['@odata.count'] > 0):
-                        API_ENDPOINT = "https://rpaorchestrator.vfc.com/api/account/authenticate"
-                        data = {
-                        "tenancyName": tenant_name,
-                        "usernameOrEmailAddress": user_name,
-                            "password": password
-                        }
-                        response = requests.post(url=API_ENDPOINT, data=data)
-                        auth_res = response.json()
-                        result = auth_res["result"]
-                        API_ENDPOINT = "https://rpaorchestrator.vfc.com/odata/Jobs?$filter=ReleaseName%20eq%20'" + \
-                            queue["Name"] + \
-                            "'%20and%20(State%20eq%20'Running'%20or%20State%20eq%20'Pending')&$orderby=CreationTime%20desc&$top=5"
-                        Headers = {"Authorization": "Bearer " + result}
-                        response = requests.get(url=API_ENDPOINT, headers=Headers)
-                        jobsres = response.json()
-                        # To get the details of robots and process from the orchestrator
-                        new_bot = APIBot()
-                        if(jobsres['@odata.count'] > 0):
-                            print("Busy ", queue["Name"])
-                        else:
-                            request_id = uuid.uuid4().hex
-                            new_bot.run_job(process_name=queue["Name"], request_id=request_id ,environment=env, triggered_by="Email")
-                            print("Trigger", queue["Name"])
-                            logger.info("Triggering the bot execution Completed")
+            print(env)
+            if check==1:
+                queueitems = queu.get_queue_items(status='New', qid=queue["Id"])
+                if(queueitems['@odata.count'] > 0):
+                    API_ENDPOINT = "https://rpaorchestrator.vfc.com/api/account/authenticate"
+                    data = {
+                    "tenancyName": tenant_name,
+                    "usernameOrEmailAddress": user_name,
+                    "password": password
+                    }
+                    response = requests.post(url=API_ENDPOINT, data=data)
+                    auth_res = response.json()
+                    result = auth_res["result"]
+                    API_ENDPOINT = "https://rpaorchestrator.vfc.com/odata/Jobs?$filter=ReleaseName%20eq%20'" + \
+                        queue["Name"] + \
+                        "'%20and%20(State%20eq%20'Running'%20or%20State%20eq%20'Pending')&$orderby=CreationTime%20desc&$top=5"
+                    Headers = {"Authorization": "Bearer " + result}
+                    response = requests.get(url=API_ENDPOINT, headers=Headers)
+                    jobsres = response.json()
+                    # To get the details of robots and process from the orchestrator
+                    new_bot = APIBot()
+                    if(jobsres['@odata.count'] > 0):
+                        print("Busy ", queue["Name"])
+                    else:
+                        request_id = uuid.uuid4().hex
+                        new_bot.run_job(process_name=queue["Name"], request_id=request_id ,environment=env, triggered_by="Email")
+                        print("Trigger", queue["Name"])
+                        logger.info("Triggering the bot execution Completed")
     except:
         logger.warning("Triggering the bot execution Failed")

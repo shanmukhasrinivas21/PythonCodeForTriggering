@@ -12,12 +12,22 @@
     "11": {
         "bot-name": "RPABOT11-ODAS-NGC-POEXTRACT",
         "sender": "",
-        "subject": "RPABOT11",
+        "subject": "RPA BOT 11",
         "body": "",
         "folder-name": "PO ReExtract",
         "active": "0",
         "environment": "NGC_Prod",
 	    "attachments_location": ""
+    },
+    "13": {
+        "bot-name": "RPABOT13-DT-PTP-BATCHCREATION",
+        "sender": "",
+        "subject": "Failed PGI/PGR",
+        "body": "",
+        "folder-name": "RPABOT13",
+        "active": "0",
+        "environment": "saptest",
+        "attachments_location": ""
     },
     "4": {
         "bot-name": "test1",

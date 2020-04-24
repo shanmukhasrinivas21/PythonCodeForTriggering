@@ -79,7 +79,6 @@ def run():
                                 add_to_queue(
                                     bot_data[each_bot], message, inbox)
                                 triggered = 1  # checkpoint
-                                break
                             else:
                                 triggered = 0
 
@@ -90,6 +89,7 @@ def run():
                             This mail move is not recorded in database.
                             if("others" in str(each_folder).lower()):
                             message.move(each_folder)'''
+        
         triggerbot.trigger()
     except Exception as e:
         template = "An exception of type {0} occurred. Arguments:\n{1!r}"
