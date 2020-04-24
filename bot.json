@@ -25,7 +25,7 @@
         "subject": "Failed PGI/PGR",
         "body": "",
         "folder-name": "RPABOT13",
-        "active": "0",
+        "active": "1",
         "environment": "saptest",
         "attachments_location": ""
     },
@@ -35,7 +35,7 @@
         "subject": "1test-1",
         "body": "",
         "folder-name": "test1",
-        "active": "1",
+        "active": "0",
         "environment": "rpahub",
         "attachments_location": "C:\\Users\\rpagen\\Report"
     }
