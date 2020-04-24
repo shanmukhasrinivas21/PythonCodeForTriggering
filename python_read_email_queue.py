@@ -97,5 +97,5 @@ def run():
         mail.sendemail("test@vfc.com","Garimalla_shanmukhasrinivas@vfc.com","Exception",message)
           
 if __name__ == "__main__":
-    logging.basicConfig(filename = "E:\\RPA\\dev\\TriggerScript\\EmailScript.log", format="%(asctime)s -  %(message)s", datefmt="%m/%d/%Y %I:%M:%S %p", filemode="w", level="INFO")
+    logging.basicConfig(filename = "R:\\testing\\TriggerScript\\EmailScript.log", format="%(asctime)s -  %(message)s", datefmt="%m/%d/%Y %I:%M:%S %p", filemode="w", level="INFO")
     run()

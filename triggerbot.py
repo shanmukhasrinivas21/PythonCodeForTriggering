@@ -39,5 +39,5 @@ def trigger():
                 print("Busy ", queue["Name"])
             else:
                 request_id = uuid.uuid4().hex
-                new_bot.run_job(process_name=queue["Name"], request_id=request_id ,environment="rpahub", triggered_by="Email")
+                new_bot.run_job(process_name=queue["Name"], request_id=request_id ,environment="saptest", triggered_by="Email")
                 print("Trigger", queue["Name"])
