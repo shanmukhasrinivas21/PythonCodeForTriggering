@@ -127,7 +127,7 @@ class APIBot:
             response = requests.post(
                 url=API_ENDPOINT, json=Body, headers=Headers)
             self.run_status = response.json()
-            #print(self.run_status)
+            print(self.run_status)
             if("@odata.context" in self.run_status):
                 print(process_name, " started Sucessfully")
                 success = True

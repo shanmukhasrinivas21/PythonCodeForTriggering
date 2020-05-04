@@ -18,19 +18,29 @@ def add_to_queue(bot, msg_tobe_moved, inbox):
     bot_name = bot["bot-name"]
     folder_name = bot["folder-name"]
     attachment_loc=bot["attachments_location"]
+    print(attachment_loc)
     sender_email = msg_tobe_moved.sender.email_address
     body = BeautifulSoup(msg_tobe_moved.body)     # BeautifulSoup converts html to text
-    inp_str = {"mailbody": body.get_text(), "mailsender": sender_email, "mailsubject":msg_tobe_moved.subject, "mail_receivedtime":msg_tobe_moved.datetime_received.strftime('%m/%d/%Y %H:%M %p')}
+    filename=""
+    if(attachment_loc == ""):
+        inp_str = {"mailbody": body.get_text(), "mailsender": sender_email, "mailsubject":msg_tobe_moved.subject, "mail_receivedtime":msg_tobe_moved.datetime_received.strftime('%m/%d/%Y %H:%M %p')}
     # Attachments need to be stored in specified path
-    ''' if(attachment_loc):
+    elif(attachment_loc != ""):
         for attachment in msg_tobe_moved.attachments:
             if isinstance(attachment, FileAttachment):
-                print(attachment.name)
-                local_path=os.path.join(attachment_loc, attachment.name)
+                name=attachment.name
+                tag=name.split(".")
+                tag[0]=tag[0]+msg_tobe_moved.datetime_received.strftime("%m-%d-%Y")
+                tag=tag[0]+"."+tag[1]
+                if(filename != ""):
+                    filename = filename+","+tag
+                elif(filename == ""):
+                    filename = tag
+                local_path=os.path.join(attachment_loc, tag)
                 with open(local_path, 'wb') as f:
-                    f.write(attachment.content)'''
-                
-   #The data collected is passed to add_queue_item in queu
+                    f.write(attachment.content)
+        print(filename)
+        inp_str = {"mailbody": body.get_text(), "mailsender": sender_email, "mailsubject":msg_tobe_moved.subject, "filename":filename, "mail_receivedtime":msg_tobe_moved.datetime_received.strftime('%m/%d/%Y %H:%M %p')}
     queu.add_queue_item(bot_name, values=inp_str)
     # check message if it read move to respective folder
     msg_tobe_moved.is_read = True
@@ -47,7 +57,7 @@ def run():
     try:
         # Get data from config and Json
           # Get Mails from outlook
-          # Compare Mail data with Json
+          # Compare Mail data with Jsonqq
         logger = logging.getLogger(__name__)
         logger.info("Execution Started")
         bot_data = {}
@@ -90,10 +100,11 @@ def run():
                             if("others" in str(each_folder).lower()):
                             message.move(each_folder)'''
         
-        triggerbot.trigger()
+        #triggerbot.trigger()
     except Exception as e:
         template = "An exception of type {0} occurred. Arguments:\n{1!r}"
         message = template.format(type(e).__name__, e.args)
+        print(message)
         mail.sendemail("test@vfc.com","Garimalla_shanmukhasrinivas@vfc.com","Exception",message)
           
 if __name__ == "__main__":

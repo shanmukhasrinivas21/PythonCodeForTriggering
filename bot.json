@@ -25,18 +25,28 @@
         "subject": "Failed PGI/PGR",
         "body": "",
         "folder-name": "RPABOT13",
-        "active": "1",
+        "active": "0",
         "environment": "saptest",
         "attachments_location": ""
     },
-    "4": {
+    "29": {
+        "bot-name": "RPABOT29-DT-DATASTAGE-FILECORRECTIONUPLOAD",
+        "sender": "",
+        "subject": "RPA BOT 29",
+        "body": "",
+        "folder-name": "DS_FILEUPLOAD",
+        "active": "0",
+        "environment": "DATASTAGE_Prod",
+        "attachments_location": "C:\\Users\\GSHANM1\\Report"
+    },
+    "49": {
         "bot-name": "test1",
         "sender": "",
         "subject": "1test-1",
         "body": "",
         "folder-name": "test1",
-        "active": "0",
+        "active": "1",
         "environment": "rpahub",
-        "attachments_location": "C:\\Users\\rpagen\\Report"
+        "attachments_location": "C:\\Users\\GSHANM1\\Report"
     }
 }   
